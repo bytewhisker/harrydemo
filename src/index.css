@@ -30,6 +30,10 @@
   --color-border-default: rgba(255, 255, 255, 0.1);
 }
 
+:root {
+  --hover-accent: #dcc484;
+}
+
 [data-theme="light"] {
   --color-bg-base: #f5f5f5;
   --color-bg-surface: #ffffff;
@@ -40,6 +44,7 @@
   --color-text-muted: #a1a1aa;
   --color-border-subtle: rgba(0, 0, 0, 0.06);
   --color-border-default: rgba(0, 0, 0, 0.1);
+  --hover-accent: #09090b;
 }
 
 html {

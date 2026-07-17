@@ -68,7 +68,7 @@ export default function Awards() {
                         </span>
                       </div>
 
-                      <h3 className="text-lg md:text-xl font-display font-bold text-text-primary group-hover:text-gold-100 transition-colors">
+                      <h3 className="text-lg md:text-xl font-display font-bold text-text-primary group-hover:text-[var(--hover-accent)] transition-colors">
                         {award.title}
                       </h3>
                       
@@ -78,7 +78,7 @@ export default function Awards() {
                     </div>
 
                     {/* Accolade Icon badge */}
-                    <div className="p-3 bg-bg-elevated border border-border-subtle rounded-xl text-gold-500/80 group-hover:text-gold-300 shrink-0 self-start">
+                    <div className="p-3 bg-bg-elevated border border-border-subtle rounded-xl text-gold-500/80 group-hover:text-[var(--hover-accent)] shrink-0 self-start">
                       <IconComponent className="w-5 h-5" />
                     </div>
                   </div>

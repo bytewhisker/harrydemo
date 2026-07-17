@@ -72,7 +72,7 @@ export default function Collaboration() {
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-lg font-display font-bold text-text-primary group-hover:text-gold-200 transition-colors">
+                    <h3 className="text-lg font-display font-bold text-text-primary group-hover:text-[var(--hover-accent)] transition-colors">
                       {option.title}
                     </h3>
                     <p className="text-text-secondary text-xs leading-relaxed font-sans">
@@ -81,10 +81,10 @@ export default function Collaboration() {
                   </div>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-[11px] font-mono tracking-wider text-text-tertiary group-hover:text-gold-500 transition-colors">
+                <div className="mt-6 pt-4 border-t border-border-subtle flex items-center justify-between text-[11px] font-mono tracking-wider text-text-tertiary group-hover:text-[var(--hover-accent)] transition-colors">
                   <span>ENGAGE CHANNEL</span>
-                  <a href="#contact" className="p-1 rounded-md bg-bg-elevated hover:bg-gold-300/10 group-hover:text-gold-200 transition-colors">
-                    <ArrowUpRight className="w-4 h-4 text-text-secondary group-hover:text-gold-500" />
+                  <a href="#contact" className="p-1 rounded-md bg-bg-elevated hover:bg-gold-300/10 group-hover:text-[var(--hover-accent)] transition-colors">
+                    <ArrowUpRight className="w-4 h-4 text-text-secondary group-hover:text-[var(--hover-accent)]" />
                   </a>
                 </div>
               </motion.div>

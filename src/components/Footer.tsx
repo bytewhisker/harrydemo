@@ -33,11 +33,11 @@ export default function Footer() {
               Registered Domains
             </h4>
             <div className="flex flex-col space-y-1.5 text-sm text-gold-300 font-mono text-center md:text-left">
-              <a href="#" className="hover:text-gold-100 transition-colors flex items-center justify-center md:justify-start space-x-1.5">
+              <a href="#" className="hover:text-[var(--hover-accent)] transition-colors flex items-center justify-center md:justify-start space-x-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold-500"></span>
                 <span>HarryHussain.co.uk</span>
               </a>
-              <a href="#" className="hover:text-gold-100 transition-colors flex items-center justify-center md:justify-start space-x-1.5">
+              <a href="#" className="hover:text-[var(--hover-accent)] transition-colors flex items-center justify-center md:justify-start space-x-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold-500"></span>
                 <span>HarryHussain.com</span>
               </a>
@@ -57,7 +57,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/harry-hussain-3a3b82195/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-mono text-text-secondary hover:text-gold-300 transition-colors flex items-center space-x-1"
+              className="text-xs font-mono text-text-secondary hover:text-[var(--hover-accent)] transition-colors flex items-center space-x-1"
             >
               <span>CONNECT ON LINKEDIN</span>
               <ArrowUpRight className="w-3.5 h-3.5" />

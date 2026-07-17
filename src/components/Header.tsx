@@ -59,7 +59,7 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-text-secondary hover:text-gold-300 transition-colors duration-200 tracking-wide"
+                className="text-sm font-medium text-text-secondary hover:text-[var(--hover-accent)] transition-colors duration-200 tracking-wide"
               >
                 {item.label}
               </a>
@@ -120,7 +120,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-lg font-medium text-text-primary hover:text-gold-300 transition-colors py-1"
+                  className="text-lg font-medium text-text-primary hover:text-[var(--hover-accent)] transition-colors py-1"
                 >
                   {item.label}
                 </a>

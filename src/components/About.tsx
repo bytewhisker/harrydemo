@@ -84,7 +84,7 @@ export default function About() {
 
                 <div className="space-y-6 relative z-10">
                   <div className="flex items-center justify-between">
-                    <div className="p-3 bg-bg-elevated border border-border-subtle rounded-xl text-gold-300 group-hover:text-gold-200 group-hover:border-gold-500/30 transition-all duration-300">
+                    <div className="p-3 bg-bg-elevated border border-border-subtle rounded-xl text-gold-300 group-hover:text-[var(--hover-accent)] group-hover:border-gold-500/30 transition-all duration-300">
                       <IconComponent className="w-6 h-6" />
                     </div>
                     <span className="text-[10px] font-mono text-text-tertiary uppercase tracking-widest bg-bg-elevated px-2.5 py-1 rounded-md border border-border-subtle">
@@ -93,7 +93,7 @@ export default function About() {
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-xl font-display font-bold text-text-primary group-hover:text-gold-100 transition-colors">
+                    <h3 className="text-xl font-display font-bold text-text-primary group-hover:text-[var(--hover-accent)] transition-colors">
                       {card.role}
                     </h3>
                     <p className="text-text-secondary text-sm leading-relaxed font-sans">
@@ -102,7 +102,7 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-border-subtle flex items-center text-xs font-semibold uppercase tracking-wider text-gold-500 group-hover:text-gold-300 transition-colors relative z-10">
+                <div className="mt-8 pt-4 border-t border-border-subtle flex items-center text-xs font-semibold uppercase tracking-wider text-gold-500 group-hover:text-[var(--hover-accent)] transition-colors relative z-10">
                   <span>Strategic Integration</span>
                   <div className="h-0.5 w-8 bg-gold-500/30 ml-3 rounded transition-all duration-300 group-hover:w-12 group-hover:bg-gold-500" />
                 </div>

@@ -169,7 +169,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-[10px] text-text-tertiary uppercase tracking-widest font-mono">Contact Desk</div>
-                    <a href="mailto:office@harryhussain.com" className="hover:text-gold-300 transition-colors">
+                    <a href="mailto:office@harryhussain.com" className="hover:text-[var(--hover-accent)] transition-colors">
                       office@harryhussain.com
                     </a>
                   </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                       href="https://www.linkedin.com/in/harry-hussain-3a3b82195/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="hover:text-gold-300 transition-colors flex items-center space-x-1.5"
+                      className="hover:text-[var(--hover-accent)] transition-colors flex items-center space-x-1.5"
                     >
                       <span>Harry Hussain | LinkedIn</span>
                       <ExternalLink className="w-3.5 h-3.5 text-gold-500" />
