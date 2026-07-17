@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="inline-flex items-center self-center lg:self-start space-x-2 glass-panel px-3 py-1.5 rounded-full">
             <span className="flex h-2 w-2 rounded-full bg-gold-500 animate-pulse" />
             <span className="text-[11px] font-semibold tracking-widest text-gold-200 uppercase font-mono">
-              Founder of Uniguard • Investor • Board Advisor
+              Founder • Investor • Board Advisor
             </span>
           </div>
 
@@ -53,7 +53,9 @@ export default function Hero() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-text-primary tracking-tight leading-none">
               <span className="gold-text-gradient">Harry Hussain</span>
               <br />
-              Founder of <span className="text-gold-500">Uniguard</span>
+              <span className="text-2xl sm:text-3xl md:text-4xl text-text-secondary font-light">
+                Building ventures that <span className="text-gold-500 font-semibold">scale beyond</span> their founders
+              </span>
             </h1>
             
             {/* Tagline Cycler */}
