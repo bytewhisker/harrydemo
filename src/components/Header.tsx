@@ -40,18 +40,11 @@ export default function Header() {
           }`}
         >
           {/* Brand/Logo */}
-          <div className="flex flex-col">
-            <a href="#" className="flex items-center space-x-2">
-              <span className="font-serif text-xl font-bold tracking-widest text-text-primary uppercase">
-                Harry <span className="text-gold-500 font-serif">Hussain</span>
-              </span>
-            </a>
-            <div className="hidden sm:flex items-center space-x-2 text-[10px] text-text-tertiary font-mono mt-0.5 uppercase tracking-wider">
-              <span>harryhussain.com</span>
-              <span className="w-1 h-1 rounded-full bg-gold-500/40"></span>
-              <span>harryhussain.co.uk</span>
-            </div>
-          </div>
+          <a href="#" className="flex items-center space-x-2">
+            <span className="font-serif text-xl font-bold tracking-widest text-text-primary uppercase">
+              Harry <span className="text-gold-500 font-serif">Hussain</span>
+            </span>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -125,17 +118,6 @@ export default function Header() {
                   {item.label}
                 </a>
               ))}
-              <hr className="border-border-subtle my-2" />
-              <div className="flex flex-col space-y-2 font-mono text-xs text-text-secondary">
-                <div className="flex justify-between">
-                  <span>Primary Domain</span>
-                  <span className="text-gold-300">harryhussain.co.uk</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Alternative Alias</span>
-                  <span className="text-gold-300">harryhussain.com</span>
-                </div>
-              </div>
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}

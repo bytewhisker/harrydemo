@@ -44,15 +44,16 @@ export default function Hero() {
           <div className="inline-flex items-center self-center lg:self-start space-x-2 glass-panel px-3 py-1.5 rounded-full">
             <span className="flex h-2 w-2 rounded-full bg-gold-500 animate-pulse" />
             <span className="text-[11px] font-semibold tracking-widest text-gold-200 uppercase font-mono">
-              Founder • Investor • Board Advisor
+              Founder of Uniguard • Investor • Board Advisor
             </span>
           </div>
 
           {/* Main Hero Header */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-extrabold text-text-primary tracking-tight leading-none">
-              Strategic Capital & <br className="hidden sm:inline" />
-              <span className="gold-text-gradient">Architectural Growth</span>
+              <span className="gold-text-gradient">Harry Hussain</span>
+              <br />
+              Founder of <span className="text-gold-500">Uniguard</span>
             </h1>
             
             {/* Tagline Cycler */}
