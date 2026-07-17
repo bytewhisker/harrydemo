@@ -47,7 +47,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="relative py-24 md:py-32 px-4 md:px-8 bg-[#0A0A0B] overflow-hidden">
+    <section id="about" className="relative py-24 md:py-32 px-4 md:px-8 bg-bg-surface overflow-hidden">
       {/* Decorative Blur Backlight */}
       <div className="ambient-glow bg-gold-500/10 w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" />
 
@@ -58,10 +58,10 @@ export default function About() {
           <span className="text-xs font-mono font-bold tracking-widest text-gold-500 uppercase">
             Executive Profile
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-text-primary tracking-tight">
             About <span className="gold-text-gradient">Harry Hussain</span>
           </h2>
-          <p className="text-gray-400 text-lg leading-relaxed font-sans mt-4">
+          <p className="text-text-secondary text-lg leading-relaxed font-sans mt-4">
             {ABOUT_LEAD.description2}
           </p>
         </div>
@@ -84,25 +84,25 @@ export default function About() {
 
                 <div className="space-y-6 relative z-10">
                   <div className="flex items-center justify-between">
-                    <div className="p-3 bg-white/[0.03] border border-white/5 rounded-xl text-gold-300 group-hover:text-gold-200 group-hover:border-gold-500/30 transition-all duration-300">
+                    <div className="p-3 bg-bg-elevated border border-border-subtle rounded-xl text-gold-300 group-hover:text-gold-200 group-hover:border-gold-500/30 transition-all duration-300">
                       <IconComponent className="w-6 h-6" />
                     </div>
-                    <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest bg-white/[0.01] px-2.5 py-1 rounded-md border border-white/[0.02]">
+                    <span className="text-[10px] font-mono text-text-tertiary uppercase tracking-widest bg-bg-elevated px-2.5 py-1 rounded-md border border-border-subtle">
                       {card.metric}
                     </span>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="text-xl font-display font-bold text-white group-hover:text-gold-100 transition-colors">
+                    <h3 className="text-xl font-display font-bold text-text-primary group-hover:text-gold-100 transition-colors">
                       {card.role}
                     </h3>
-                    <p className="text-gray-400 text-sm leading-relaxed font-sans">
+                    <p className="text-text-secondary text-sm leading-relaxed font-sans">
                       {card.desc}
                     </p>
                   </div>
                 </div>
 
-                <div className="mt-8 pt-4 border-t border-white/[0.03] flex items-center text-xs font-semibold uppercase tracking-wider text-gold-500 group-hover:text-gold-300 transition-colors relative z-10">
+                <div className="mt-8 pt-4 border-t border-border-subtle flex items-center text-xs font-semibold uppercase tracking-wider text-gold-500 group-hover:text-gold-300 transition-colors relative z-10">
                   <span>Strategic Integration</span>
                   <div className="h-0.5 w-8 bg-gold-500/30 ml-3 rounded transition-all duration-300 group-hover:w-12 group-hover:bg-gold-500" />
                 </div>
@@ -116,10 +116,10 @@ export default function About() {
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mt-16 glass-panel border-white/5 p-8 md:p-12 rounded-3xl text-center space-y-4 relative overflow-hidden"
+          className="mt-16 glass-panel border-border-subtle p-8 md:p-12 rounded-3xl text-center space-y-4 relative overflow-hidden"
         >
           <div className="absolute -inset-10 bg-radial from-gold-500/5 to-transparent blur-xl pointer-events-none" />
-          <h3 className="text-xl md:text-2xl font-display font-semibold text-white max-w-3xl mx-auto italic leading-relaxed">
+          <h3 className="text-xl md:text-2xl font-display font-semibold text-text-primary max-w-3xl mx-auto italic leading-relaxed">
             &ldquo;Passionate about building businesses, engineering robust enterprise governance, and investing heavily in the future.&rdquo;
           </h3>
           <p className="text-xs font-mono tracking-widest text-gold-500 uppercase">

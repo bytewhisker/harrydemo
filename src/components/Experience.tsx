@@ -19,7 +19,7 @@ export default function Experience() {
   const [activeSector, setActiveSector] = useState<string>(EXPERIENCE_SECTORS[0].id);
 
   return (
-    <section id="experience" className="relative py-24 md:py-32 px-4 md:px-8 bg-[#0A0A0B] overflow-hidden">
+    <section id="experience" className="relative py-24 md:py-32 px-4 md:px-8 bg-bg-surface overflow-hidden">
       {/* Background glow overlay */}
       <div className="ambient-glow bg-gold-400/5 w-[500px] h-[500px] bottom-1/4 right-1/4 z-0" />
 
@@ -31,15 +31,15 @@ export default function Experience() {
             <span className="text-xs font-mono font-bold tracking-widest text-gold-500 uppercase">
               Operational Depth
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-text-primary tracking-tight">
               Businesses & <span className="gold-text-gradient">Sectors</span>
             </h2>
-            <p className="text-gray-400 text-base md:text-lg leading-relaxed font-sans">
+            <p className="text-text-secondary text-base md:text-lg leading-relaxed font-sans">
               Illustrating structural versatility and capital depth across diverse risk environments, high-value asset classes, and systemized distribution grids.
             </p>
           </div>
           <div className="lg:col-span-5 flex justify-end">
-            <div className="hidden lg:flex items-center space-x-2 text-xs font-mono text-gray-500">
+            <div className="hidden lg:flex items-center space-x-2 text-xs font-mono text-text-tertiary">
               <span>ACTIVE DISCLOSURES</span>
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span>COMPLIANT STATUS</span>
@@ -66,23 +66,23 @@ export default function Experience() {
                       : 'border-white/[0.02] hover:border-white/10 hover:bg-white/[0.01]'
                   }`}
                 >
-                  <div className={`p-3.5 rounded-xl border transition-colors ${
-                    isActive 
-                      ? 'bg-gold-300 text-black border-transparent' 
-                      : 'bg-white/[0.02] text-gray-400 border-white/5'
-                  }`}>
+                    <div className={`p-3.5 rounded-xl border transition-colors ${
+                      isActive 
+                        ? 'bg-gold-300 text-black border-transparent' 
+                        : 'bg-bg-elevated text-text-secondary border-border-subtle'
+                    }`}>
                     <Icon className="w-5 h-5" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="text-xs text-gold-500 font-mono font-medium uppercase tracking-wider">
                       {sector.role}
                     </div>
-                    <div className="text-base font-display font-bold text-white mt-0.5 truncate">
+                    <div className="text-base font-display font-bold text-text-primary mt-0.5 truncate">
                       {sector.title}
                     </div>
                   </div>
                   <ChevronRight className={`w-5 h-5 transition-transform duration-300 ${
-                    isActive ? 'text-gold-300 translate-x-1' : 'text-gray-600'
+                    isActive ? 'text-gold-300 translate-x-1' : 'text-text-muted'
                   }`} />
                 </button>
               );
@@ -103,51 +103,51 @@ export default function Experience() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.4 }}
-                    className="glass-panel border-white/5 p-8 md:p-10 rounded-3xl space-y-8 shadow-xl relative overflow-hidden"
+                    className="glass-panel border-border-subtle p-8 md:p-10 rounded-3xl space-y-8 shadow-xl relative overflow-hidden"
                   >
                     {/* Visual corner decoration */}
                     <div className="absolute -top-12 -right-12 w-40 h-40 bg-gold-500/5 rounded-full blur-2xl" />
 
                     {/* Meta Section */}
-                    <div className="flex items-center justify-between border-b border-white/5 pb-6">
+                    <div className="flex items-center justify-between border-b border-border-subtle pb-6">
                       <div>
                         <span className="text-xs text-gold-500 font-mono uppercase tracking-widest">
                           SECTOR PORTFOLIO
                         </span>
-                        <h3 className="text-2xl font-display font-extrabold text-white mt-1">
+                        <h3 className="text-2xl font-display font-extrabold text-text-primary mt-1">
                           {sector.title}
                         </h3>
                       </div>
-                      <div className="p-4 bg-white/[0.02] border border-white/5 rounded-2xl text-gold-300">
+                      <div className="p-4 bg-bg-elevated border border-border-subtle rounded-2xl text-gold-300">
                         <Icon className="w-8 h-8" />
                       </div>
                     </div>
 
                     {/* Description */}
                     <div className="space-y-4">
-                      <h4 className="text-xs font-mono font-bold text-gray-400 uppercase tracking-widest">
+                      <h4 className="text-xs font-mono font-bold text-text-secondary uppercase tracking-widest">
                         Strategic Objective & Involvement
                       </h4>
-                      <p className="text-gray-300 text-sm md:text-base leading-relaxed font-sans">
+                      <p className="text-text-secondary text-sm md:text-base leading-relaxed font-sans">
                         {sector.description}
                       </p>
                     </div>
 
                     {/* Highlights */}
                     <div className="space-y-4 pt-2">
-                      <h4 className="text-xs font-mono font-bold text-gray-400 uppercase tracking-widest">
+                      <h4 className="text-xs font-mono font-bold text-text-secondary uppercase tracking-widest">
                         Key Milestones & Contributions
                       </h4>
                       <div className="grid grid-cols-1 sm:grid-cols-1 gap-3">
                         {sector.highlights.map((highlight, index) => (
                           <div
                             key={index}
-                            className="flex items-start space-x-3 bg-white/[0.01] border border-white/[0.03] p-4 rounded-xl hover:border-gold-500/20 transition-colors"
+                            className="flex items-start space-x-3 bg-bg-elevated border border-border-subtle p-4 rounded-xl hover:border-gold-500/20 transition-colors"
                           >
                             <div className="p-1 rounded-full bg-gold-500/10 text-gold-300 mt-0.5 shrink-0">
                               <Check className="w-3.5 h-3.5" />
                             </div>
-                            <span className="text-gray-300 text-sm font-sans leading-snug">
+                            <span className="text-text-secondary text-sm font-sans leading-snug">
                               {highlight}
                             </span>
                           </div>

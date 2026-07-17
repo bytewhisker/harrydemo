@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -14,7 +15,8 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen text-white bg-[#030303] overflow-x-hidden antialiased selection:bg-gold-400/20 selection:text-gold-100">
+    <ThemeProvider>
+      <div className="min-h-screen text-text-primary bg-bg-base overflow-x-hidden antialiased selection:bg-gold-400/20 selection:text-gold-100">
       
       {/* Dynamic Navigation Capsule Header */}
       <Header />
@@ -46,5 +48,6 @@ export default function App() {
       <Footer />
 
     </div>
+    </ThemeProvider>
   );
 }

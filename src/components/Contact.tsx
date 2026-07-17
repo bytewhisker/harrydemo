@@ -129,7 +129,7 @@ export default function Contact() {
     : enquiries.filter(e => e.category === filterCategory);
 
   return (
-    <section id="contact" className="relative py-24 md:py-32 px-4 md:px-8 bg-[#0A0A0B] overflow-hidden">
+    <section id="contact" className="relative py-24 md:py-32 px-4 md:px-8 bg-bg-surface overflow-hidden">
       {/* Absolute glow bulbs */}
       <div className="ambient-glow bg-gold-400/10 w-[600px] h-[600px] -bottom-20 right-10 z-0" />
       <div className="ambient-glow bg-gold-600/5 w-[500px] h-[500px] top-10 left-10 z-0" />
@@ -141,10 +141,10 @@ export default function Contact() {
           <span className="text-xs font-mono font-bold tracking-widest text-gold-500 uppercase">
             Private Channel
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-text-primary tracking-tight">
             Initiate <span className="gold-text-gradient">Enquiry</span>
           </h2>
-          <p className="text-gray-400 text-base md:text-lg leading-relaxed font-sans">
+          <p className="text-text-secondary text-base md:text-lg leading-relaxed font-sans">
             Please select the relevant category below to route your opportunity or board partnership request directly to Harry&rsquo;s private desk.
           </p>
         </div>
@@ -154,33 +154,33 @@ export default function Contact() {
           {/* Info / Metadata Columns (Left) */}
           <div className="lg:col-span-5 space-y-8">
             
-            <div className="glass-panel border-white/5 p-8 rounded-3xl space-y-6">
-              <h3 className="text-xl font-display font-bold text-white">Direct Channels</h3>
-              <p className="text-gray-400 text-sm leading-relaxed font-sans">
+            <div className="glass-panel border-border-subtle p-8 rounded-3xl space-y-6">
+              <h3 className="text-xl font-display font-bold text-text-primary">Direct Channels</h3>
+              <p className="text-text-secondary text-sm leading-relaxed font-sans">
                 Harry Hussain reviews qualified inquiries personally. For legal proposals or formal joint-venture documents, you may also reference official domain registries:
               </p>
 
               <div className="space-y-4 font-sans text-sm">
                 
                 {/* Domain links */}
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <div className="p-2 bg-white/[0.03] border border-white/5 rounded-lg text-gold-300">
+                <div className="flex items-center space-x-3 text-text-secondary">
+                  <div className="p-2 bg-bg-elevated border border-border-subtle rounded-lg text-gold-300">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Contact Desk</div>
+                    <div className="text-[10px] text-text-tertiary uppercase tracking-widest font-mono">Contact Desk</div>
                     <a href="mailto:office@harryhussain.com" className="hover:text-gold-300 transition-colors">
                       office@harryhussain.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <div className="p-2 bg-white/[0.03] border border-white/5 rounded-lg text-gold-300">
+                <div className="flex items-center space-x-3 text-text-secondary">
+                  <div className="p-2 bg-bg-elevated border border-border-subtle rounded-lg text-gold-300">
                     <Building className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Registered Domains</div>
+                    <div className="text-[10px] text-text-tertiary uppercase tracking-widest font-mono">Registered Domains</div>
                     <div className="flex flex-col space-y-0.5 text-xs font-mono text-gold-500">
                       <span className="flex items-center space-x-1.5">
                         <span>HarryHussain.co.uk</span>
@@ -194,12 +194,12 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <div className="p-2 bg-white/[0.03] border border-white/5 rounded-lg text-gold-300">
+                <div className="flex items-center space-x-3 text-text-secondary">
+                  <div className="p-2 bg-bg-elevated border border-border-subtle rounded-lg text-gold-300">
                     <Layers className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">LinkedIn Profile</div>
+                    <div className="text-[10px] text-text-tertiary uppercase tracking-widest font-mono">LinkedIn Profile</div>
                     <a 
                       href="https://www.linkedin.com/in/harry-hussain-3a3b82195/" 
                       target="_blank" 
@@ -216,12 +216,12 @@ export default function Contact() {
             </div>
 
             {/* Interactive Admin Trigger Banner */}
-            <div className="glass-panel border-white/5 p-6 rounded-2xl bg-gold-300/[0.01] hover:bg-gold-300/[0.02] border-dashed border-gold-500/20 flex flex-col space-y-3">
+            <div className="glass-panel border-border-default p-6 rounded-2xl bg-gold-300/[0.01] hover:bg-gold-300/[0.02] border-dashed border-gold-500/20 flex flex-col space-y-3">
               <div className="flex items-center space-x-2 text-gold-300">
                 <Inbox className="w-5 h-5 text-gold-500" />
                 <span className="text-xs font-mono font-bold uppercase tracking-wider">Interactive CRM Suite</span>
               </div>
-              <p className="text-xs text-gray-400 font-sans leading-relaxed">
+              <p className="text-xs text-text-secondary font-sans leading-relaxed">
                 Test the client enquiry experience! Type in details, press submit, and view your inquiries directly inside the real-time review panel.
               </p>
               <button
@@ -239,7 +239,7 @@ export default function Contact() {
 
           {/* Contact Form Column (Right) */}
           <div className="lg:col-span-7">
-            <div className="glass-panel border-white/5 p-8 md:p-10 rounded-3xl shadow-xl">
+            <div className="glass-panel border-border-subtle p-8 md:p-10 rounded-3xl shadow-xl">
               
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
@@ -253,7 +253,7 @@ export default function Contact() {
                     
                     {/* Category Selector Chips */}
                     <div className="space-y-3">
-                      <label className="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider">
+                      <label className="text-xs font-mono font-bold text-text-secondary uppercase tracking-wider">
                         Enquiry Purpose
                       </label>
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
@@ -265,7 +265,7 @@ export default function Contact() {
                             className={`py-2.5 px-3 rounded-xl border text-xs font-medium text-center transition-all duration-200 ${
                               category === cat
                                 ? 'bg-gold-300 border-transparent text-black font-semibold'
-                                : 'bg-white/[0.01] border-white/5 text-gray-400 hover:text-white hover:border-white/10'
+                                : 'bg-bg-elevated border-border-subtle text-text-secondary hover:text-text-primary hover:border-border-default'
                             }`}
                           >
                             {cat}
@@ -278,7 +278,7 @@ export default function Contact() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       
                       <div className="space-y-2">
-                        <label htmlFor="name" className="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider">
+                        <label htmlFor="name" className="text-xs font-mono font-bold text-text-secondary uppercase tracking-wider">
                           Full Name *
                         </label>
                         <input
@@ -288,12 +288,12 @@ export default function Contact() {
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           placeholder="Your Name"
-                          className="w-full bg-white/[0.01] border border-white/5 focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-white text-sm transition-colors"
+                          className="w-full bg-bg-elevated border border-border-subtle focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-text-primary text-sm transition-colors"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <label htmlFor="email" className="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider">
+                        <label htmlFor="email" className="text-xs font-mono font-bold text-text-secondary uppercase tracking-wider">
                           Email Address *
                         </label>
                         <input
@@ -303,39 +303,39 @@ export default function Contact() {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="name@company.com"
-                          className="w-full bg-white/[0.01] border border-white/5 focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-white text-sm transition-colors"
+                          className="w-full bg-bg-elevated border border-border-subtle focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-text-primary text-sm transition-colors"
                         />
                       </div>
 
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="company" className="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider">
-                        Company / Fund / Asset (Optional)
-                      </label>
-                      <input
-                        id="company"
-                        type="text"
-                        value={company}
-                        onChange={(e) => setCompany(e.target.value)}
-                        placeholder="e.g. Sterling Holdings Ltd"
-                        className="w-full bg-white/[0.01] border border-white/5 focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-white text-sm transition-colors"
-                      />
+                    <label htmlFor="company" className="text-xs font-mono font-bold text-text-secondary uppercase tracking-wider">
+                      Company / Fund / Asset (Optional)
+                    </label>
+                    <input
+                      id="company"
+                      type="text"
+                      value={company}
+                      onChange={(e) => setCompany(e.target.value)}
+                      placeholder="e.g. Sterling Holdings Ltd"
+                      className="w-full bg-bg-elevated border border-border-subtle focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-text-primary text-sm transition-colors"
+                    />
                     </div>
 
                     <div className="space-y-2">
-                      <label htmlFor="message" className="text-xs font-mono font-bold text-gray-400 uppercase tracking-wider">
-                        Opportunity Details / Brief Proposal *
-                      </label>
-                      <textarea
-                        id="message"
-                        required
-                        rows={5}
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        placeholder="Provide details about the advisory role, partnership scope, or investment metrics..."
-                        className="w-full bg-white/[0.01] border border-white/5 focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-white text-sm transition-colors resize-none"
-                      />
+                    <label htmlFor="message" className="text-xs font-mono font-bold text-text-secondary uppercase tracking-wider">
+                      Opportunity Details / Brief Proposal *
+                    </label>
+                    <textarea
+                      id="message"
+                      required
+                      rows={5}
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      placeholder="Provide details about the advisory role, partnership scope, or investment metrics..."
+                      className="w-full bg-bg-elevated border border-border-subtle focus:border-gold-500 focus:outline-none p-3.5 rounded-xl text-text-primary text-sm transition-colors resize-none"
+                    />
                     </div>
 
                     {/* Submit Button */}
@@ -370,8 +370,8 @@ export default function Contact() {
                       <CheckCircle className="w-12 h-12" />
                     </div>
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-display font-extrabold text-white">Enquiry Routed Successfully</h3>
-                      <p className="text-gray-400 text-sm max-w-md mx-auto leading-relaxed">
+                      <h3 className="text-2xl font-display font-extrabold text-text-primary">Enquiry Routed Successfully</h3>
+                      <p className="text-text-secondary text-sm max-w-md mx-auto leading-relaxed">
                         Thank you for your proposal. Your submission has been encrypted and saved directly to the database. Harry Hussain or his delegate will review this within 48 business hours.
                       </p>
                     </div>
@@ -379,7 +379,7 @@ export default function Contact() {
                     <div className="pt-4">
                       <button
                         onClick={() => setIsSubmitted(false)}
-                        className="px-6 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-white border border-white/10 hover:border-gold-500 transition-colors"
+                        className="px-6 py-3 rounded-xl text-xs font-semibold uppercase tracking-wider text-text-primary border border-border-default hover:border-gold-500 transition-colors"
                       >
                         Submit Another Inquiry
                       </button>
@@ -408,13 +408,13 @@ export default function Contact() {
                 SECURE TESTING SUITE
               </div>
 
-              <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-white/5 pb-4 gap-4">
+              <div className="flex flex-col md:flex-row md:items-center justify-between border-b border-border-subtle pb-4 gap-4">
                 <div>
-                  <h3 className="text-xl font-display font-bold text-white flex items-center space-x-2">
+                  <h3 className="text-xl font-display font-bold text-text-primary flex items-center space-x-2">
                     <span>Enquiries Desk Inbox</span>
                     <span className="text-xs font-mono font-normal text-gold-500">(Local Database)</span>
                   </h3>
-                  <p className="text-gray-500 text-xs mt-0.5">Mock CRM server logs representing database ingestion.</p>
+                  <p className="text-text-tertiary text-xs mt-0.5">Mock CRM server logs representing database ingestion.</p>
                 </div>
 
                 {/* Filter Selector */}
@@ -425,8 +425,8 @@ export default function Contact() {
                       onClick={() => setFilterCategory(cat)}
                       className={`px-3 py-1.5 rounded-lg text-xs font-mono transition-colors ${
                         filterCategory === cat
-                          ? 'bg-gold-400/20 text-gold-200 border border-gold-500/30'
-                          : 'bg-white/[0.01] border border-white/5 text-gray-400 hover:text-white'
+                          ?                           'bg-gold-400/20 text-gold-200 border border-gold-500/30'
+                          : 'bg-bg-elevated border border-border-subtle text-text-secondary hover:text-text-primary'
                       }`}
                     >
                       {cat}
@@ -438,21 +438,21 @@ export default function Contact() {
               {/* Inquiry records */}
               <div className="space-y-4 max-h-[350px] overflow-y-auto pr-2">
                 {filteredEnquiries.length === 0 ? (
-                  <div className="text-center py-12 text-gray-500 text-sm font-mono">
+                  <div className="text-center py-12 text-text-tertiary text-sm font-mono">
                     NO SUBMISSIONS RECORDED IN THE "{filterCategory.toUpperCase()}" CATEGORY.
                   </div>
                 ) : (
                   filteredEnquiries.map((enq) => (
                     <div
                       key={enq.id}
-                      className="p-5 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-white/10 transition-colors space-y-3 relative group"
+                      className="p-5 rounded-2xl bg-bg-elevated border border-border-subtle hover:border-border-default transition-colors space-y-3 relative group"
                     >
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                         <div>
                           <div className="flex items-center space-x-2">
-                            <span className="font-display font-bold text-white text-base">{enq.name}</span>
+                            <span className="font-display font-bold text-text-primary text-base">{enq.name}</span>
                             {enq.company && (
-                              <span className="text-xs text-gray-400 font-sans">
+                              <span className="text-xs text-text-secondary font-sans">
                                 — {enq.company}
                               </span>
                             )}
@@ -461,7 +461,7 @@ export default function Contact() {
                         </div>
 
                         <div className="flex items-center space-x-2">
-                          <span className="text-[10px] font-mono text-gray-500">
+                          <span className="text-[10px] font-mono text-text-tertiary">
                             {enq.timestamp}
                           </span>
                           <span className="text-[10px] font-mono font-bold text-gold-500 bg-gold-500/10 px-2 py-0.5 rounded uppercase">
@@ -482,14 +482,14 @@ export default function Contact() {
                         </div>
                       </div>
 
-                      <p className="text-gray-300 text-xs md:text-sm leading-relaxed font-sans border-l-2 border-gold-500/30 pl-3">
+                      <p className="text-text-secondary text-xs md:text-sm leading-relaxed font-sans border-l-2 border-gold-500/30 pl-3">
                         {enq.message}
                       </p>
 
                       <div className="flex justify-end space-x-2 pt-2 opacity-80 group-hover:opacity-100 transition-opacity">
                         <button
                           onClick={() => toggleStatus(enq.id)}
-                          className="px-3 py-1 rounded-lg bg-white/[0.02] border border-white/5 hover:border-white/10 text-[10px] font-mono text-gray-400 hover:text-white transition-all flex items-center space-x-1"
+                          className="px-3 py-1 rounded-lg bg-bg-elevated border border-border-subtle hover:border-border-default text-[10px] font-mono text-text-secondary hover:text-text-primary transition-all flex items-center space-x-1"
                         >
                           <Check className="w-3 h-3 text-gold-500" />
                           <span>Toggle Status</span>
