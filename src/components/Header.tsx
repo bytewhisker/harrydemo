@@ -105,7 +105,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-x-0 top-24 mx-4 z-40 glass-panel border-border-default rounded-2xl p-6 md:hidden shadow-2xl overflow-hidden"
+            className="fixed inset-x-0 top-24 mx-4 z-40 bg-bg-surface/95 backdrop-blur-xl border border-border-default rounded-2xl p-6 md:hidden shadow-2xl overflow-hidden"
           >
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
