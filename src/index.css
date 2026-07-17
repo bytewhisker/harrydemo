@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", "Inter", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-50: #fbf9f3;
+  --color-gold-100: #f5eed8;
+  --color-gold-200: #eadcb4;
+  --color-gold-300: #dcc484;
+  --color-gold-400: #cca755;
+  --color-gold-500: #D4AF37; /* Precise Gold accent */
+  --color-gold-600: #b58d28;
+  --color-gold-700: #8c681b;
+  --color-gold-800: #6a4e17;
+  --color-gold-900: #503b14;
+  --color-gold-950: #291d07;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c1f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #27272a;
+}
+
+/* Custom premium background ambient patterns */
+.ambient-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(140px);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+/* Glassmorphism utility card matching Professional Polish */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 175, 55, 0.25);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.accent-border {
+  border-left: 2px solid #D4AF37;
+}
+
+/* Luxury button gradients */
+.gold-gradient {
+  background: linear-gradient(135deg, #eadcb4 0%, #D4AF37 50%, #8c681b 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #eadcb4 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0A0B;
+}
