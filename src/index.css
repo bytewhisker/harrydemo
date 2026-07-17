@@ -45,6 +45,10 @@
   --color-border-subtle: rgba(0, 0, 0, 0.06);
   --color-border-default: rgba(0, 0, 0, 0.1);
   --hover-accent: #09090b;
+  --color-gold-200: #c9a84c;
+  --color-gold-300: #b8960f;
+  --color-gold-400: #a07d00;
+  --color-gold-500: #c49a20;
 }
 
 html {
